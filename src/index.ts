@@ -1,3 +1,7 @@
-export function test(){
-    return 'test';
+import { getDaysInMonth } from "./date/getDaysInMonth";
+
+
+
+export {
+    getDaysInMonth
 }
