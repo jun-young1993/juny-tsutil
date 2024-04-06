@@ -3,12 +3,12 @@ describe('getDaysInMonth', () => {
     test('should return an array of days for the given month and year', () => {
       const year = 2024;
       const month = 4; // April
-      const expectedDays = [
-        '2024-04-01',
-        '2024-04-02',
-        // Add more expected days here for April 2024
-        // Example: '2024-04-03', '2024-04-04', ...
-      ];
+      const expectedDays: string[] = [];
+      const lastDay = 30;
+      for(let day=1; day>=lastDay; day++){
+        const formattedDay = day < 10 ? `0${day}` : `${day}`;
+        expectedDays.push(`2024-04-${formattedDay}`);
+      }
       
       const result = getDaysInMonth(year, month);
   

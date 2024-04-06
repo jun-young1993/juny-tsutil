@@ -1,3 +1,6 @@
+import { getFirstInMonth } from "./getFirstDayInMotth";
+import { getLastInMonth } from "./getLastDayInMotth";
+
 /**
  * 특정 년도와 월의 시작일부터 종료일까지의 날짜 배열을 반환합니다.
  * @param {number} year - 년도를 나타내는 숫자
@@ -5,8 +8,8 @@
  * @returns {string[]} 해당 년도와 월의 날짜 배열. 예: ['YYYY-MM-DD', 'YYYY-MM-DD', ...]
  */
 export function getDaysInMonth(year: number, month: number): string[] {
-    const startDate = new Date(year, month - 1, 1);
-    const endDate = new Date(year, month, 0); // 0일은 이전 달의 마지막 날짜를 의미함
+    const startDate = getFirstInMonth(year, month);
+    const endDate = getLastInMonth(year, month);
   
     const days = [];
     let currentDate = startDate;
