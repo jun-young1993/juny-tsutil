@@ -16,12 +16,12 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && typedoc --plugin typedoc-plugin-markdown --out docs src/*"
   },
   "description": "no description",
   "author": {
     "name": "jun-young1993",
-    "email": "juny3738@gmail.com",
+    "email": "juny3738@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -33,23 +33,25 @@
     "jest": "^29.7.0",
     "supertest": "^6.3.4",
     "ts-jest": "^29.1.2",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "^3.17.1",
     "typescript": "^5.4.4"
   },
   "jest": {
     "transform": {
-        "^.+\\.ts$": "ts-jest"
+      "^.+\\.ts$": "ts-jest"
     },
     "testRegex": "\\.test\\.ts$",
     "moduleFileExtensions": [
-        "ts",
-        "tsx",
-        "js",
-        "json"
+      "ts",
+      "tsx",
+      "js",
+      "json"
     ],
     "globals": {
-        "ts-jest": {
-            "diagnostics": true
-        }
+      "ts-jest": {
+        "diagnostics": true
+      }
     }
   }
 }
