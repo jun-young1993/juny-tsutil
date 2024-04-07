@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && typedoc --plugin typedoc-plugin-markdown --out docs src/*"
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && typedoc --plugin typedoc-plugin-markdown --out docs src/* && node build.js"
   },
   "description": "no description",
   "author": {
