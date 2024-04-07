@@ -38,9 +38,19 @@ string
 
 type - 0: 앞자리 채우기, -1: 뒷자리 채우기
 
+**`Example`**
+
+```ts
+const result = fillWord('4',2,'0');
+// result = "04"
+
+const result = fillWord('4',2,'0',-1);
+// result = "40"
+```
+
 #### Defined in
 
-[str/fillWord.ts:11](https://github.com/jun-young1993/juny-tsutil/blob/dda86ab/src/str/fillWord.ts#L11)
+[str/fillWord.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/c0470fc/src/str/fillWord.ts#L20)
 
 ___
 
@@ -65,7 +75,7 @@ ___
 
 #### Defined in
 
-[date/getDaysInMonth.ts:12](https://github.com/jun-young1993/juny-tsutil/blob/dda86ab/src/date/getDaysInMonth.ts#L12)
+[date/getDaysInMonth.ts:12](https://github.com/jun-young1993/juny-tsutil/blob/c0470fc/src/date/getDaysInMonth.ts#L12)
 
 ___
 
@@ -86,7 +96,7 @@ ___
 
 #### Defined in
 
-[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/dda86ab/src/date/getFirstDayInMotth.ts#L10)
+[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/c0470fc/src/date/getFirstDayInMotth.ts#L10)
 
 ___
 
@@ -111,4 +121,4 @@ Date
 
 #### Defined in
 
-[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/dda86ab/src/date/getLastDayInMotth.ts#L9)
+[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/c0470fc/src/date/getLastDayInMotth.ts#L9)

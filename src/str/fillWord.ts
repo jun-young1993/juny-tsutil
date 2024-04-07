@@ -7,8 +7,17 @@
  * @Param {number} type - 0: 앞자리 채우기, -1: 뒷자리 채우기
  *
  * @returns {String} string
+ *
+ * @example
+ * ```ts
+ * const result = fillWord('4',2,'0');
+ * // result = "04"
+ *
+ * const result = fillWord('4',2,'0',-1);
+ * // result = "40"
+ * ```
  */
-export function fillWord(str: string, length: number, word: string, type: 0 | -1 = 0): string {
+export function fillWord(str: string, length: number, word: string = '', type: 0 | -1 = 0): string {
 
     if (word.length > 1) {
         throw new Error('only fill word length 1')
