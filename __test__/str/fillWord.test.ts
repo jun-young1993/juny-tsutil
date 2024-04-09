@@ -1,4 +1,5 @@
-import {fillWord} from "../../src";
+import { fillWord } from "../../src/index";
+
 
 describe('fillWord', () => {
     test('should return an array of days for the given month and year', () => {

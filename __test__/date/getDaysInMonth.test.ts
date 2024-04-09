@@ -10,9 +10,9 @@ describe('getDaysInMonth', () => {
         expectedDays.push(`2024-04-${formattedDay}`);
       }
       
-      const result = getDaysInMonth(2024, 4);
-  console.log("=>(getDaysInMonth.test.ts:15) result", result);
-      // expect(result).toEqual(expectedDays);
+      getDaysInMonth(2024, 4);
+      // [2024-04-01 ... 2024-04-30]
+      
     });
   
     // Add more test cases here for different scenarios if needed

@@ -8,6 +8,12 @@ import {compareDate} from "./compareDate";
  * @param {number} year - 년도를 나타내는 숫자
  * @param {number} month - 월을 나타내는 숫자 (1부터 12까지의 숫자)
  * @returns {string[]} 해당 년도와 월의 날짜 배열. 예: ['YYYY-MM-DD', 'YYYY-MM-DD', ...]
+ * 
+ * @example
+ * ```typescript
+ *    getDaysInMonth(2024, 4);
+ *     // [2024-04-01 ... 2024-04-30]
+ * ```
  */
 export function getDaysInMonth(year: number, month: number): Date[] {
     let startDate = getFirstInMonth(year, month);
