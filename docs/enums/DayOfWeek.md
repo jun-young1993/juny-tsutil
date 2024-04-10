@@ -36,7 +36,7 @@ Friday
 
 #### Defined in
 
-[date/DayOfWeek.ts:36](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L36)
+[date/DayOfWeek.ts:36](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L36)
 
 ___
 
@@ -48,7 +48,7 @@ Monday
 
 #### Defined in
 
-[date/DayOfWeek.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L20)
+[date/DayOfWeek.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L20)
 
 ___
 
@@ -60,7 +60,7 @@ Saturday
 
 #### Defined in
 
-[date/DayOfWeek.ts:40](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L40)
+[date/DayOfWeek.ts:40](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L40)
 
 ___
 
@@ -72,7 +72,7 @@ Sunday
 
 #### Defined in
 
-[date/DayOfWeek.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L16)
+[date/DayOfWeek.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L16)
 
 ___
 
@@ -84,7 +84,7 @@ Thursday
 
 #### Defined in
 
-[date/DayOfWeek.ts:32](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L32)
+[date/DayOfWeek.ts:32](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L32)
 
 ___
 
@@ -96,7 +96,7 @@ Tuesday
 
 #### Defined in
 
-[date/DayOfWeek.ts:24](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L24)
+[date/DayOfWeek.ts:24](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L24)
 
 ___
 
@@ -108,4 +108,4 @@ Wednesday
 
 #### Defined in
 
-[date/DayOfWeek.ts:28](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/DayOfWeek.ts#L28)
+[date/DayOfWeek.ts:28](https://github.com/jun-young1993/juny-tsutil/blob/babb60b/src/date/DayOfWeek.ts#L28)
