@@ -6,7 +6,7 @@ import { DayOfWeek } from "./date/DayOfWeek";
 import { isWeek } from "./date/isWeek";
 import { addDay } from "./date/addDay";
 import { compareDate } from "./date/compareDate";
-import { getPreviousMonthLastDay } from "./date/getPreviousMonth";
+import { getPreviousMonthLastDay } from "./date/getPreviousMonthLastDay";
 import { subtractDay } from "./date/subtractDay";
 import { getPreviousMonthLastSunday } from "./date/getPreviousMonthLastSunday";
 

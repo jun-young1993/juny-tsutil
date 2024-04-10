@@ -1,5 +1,5 @@
 import { DayOfWeek, getPreviousMonthLastDay } from '../../src/index';
-describe('DayOfWeek', () => {
+describe('getPreviousMonthLastDay', () => {
     test('should return an array of days for the given month and year', () => {
 
         expect(

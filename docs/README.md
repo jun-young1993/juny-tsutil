@@ -46,7 +46,7 @@ Date 객체에 대한 날짜 더하기
 
 #### Defined in
 
-[date/addDay.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/addDay.ts#L9)
+[date/addDay.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/addDay.ts#L9)
 
 ___
 
@@ -88,7 +88,7 @@ Date 객체를 밀리초 까지의 비교로 같은 시간대인지 판단
 
 #### Defined in
 
-[date/compareDate.ts:27](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/compareDate.ts#L27)
+[date/compareDate.ts:27](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/compareDate.ts#L27)
 
 ___
 
@@ -129,7 +129,7 @@ const result = fillWord('4',2,'0',-1);
 
 #### Defined in
 
-[str/fillWord.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/str/fillWord.ts#L20)
+[str/fillWord.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/str/fillWord.ts#L20)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[date/getDaysInMonth.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/getDaysInMonth.ts#L18)
+[date/getDaysInMonth.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getDaysInMonth.ts#L18)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/getFirstDayInMotth.ts#L10)
+[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getFirstDayInMotth.ts#L10)
 
 ___
 
@@ -207,7 +207,7 @@ Date
 
 #### Defined in
 
-[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/getLastDayInMotth.ts#L9)
+[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getLastDayInMotth.ts#L9)
 
 ___
 
@@ -240,7 +240,7 @@ previous date
 
 #### Defined in
 
-[date/getPreviousMonth.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/getPreviousMonth.ts#L16)
+[date/getPreviousMonthLastDay.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getPreviousMonthLastDay.ts#L16)
 
 ___
 
@@ -276,15 +276,15 @@ expect(
 expect(
 	getPreviousMonthLastSunday(2024,5)
 ).toEqual([
-	new Date('2024-04-30T00:00:00.000Z'),
-	new Date('2024-04-29T00:00:00.000Z'),
 	new Date('2024-04-28T00:00:00.000Z'),
+		new Date('2024-04-29T00:00:00.000Z'),
+		new Date('2024-04-30T00:00:00.000Z'),
 ])
 ```
 
 #### Defined in
 
-[date/getPreviousMonthLastSunday.ts:33](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/getPreviousMonthLastSunday.ts#L33)
+[date/getPreviousMonthLastSunday.ts:33](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getPreviousMonthLastSunday.ts#L33)
 
 ___
 
@@ -317,7 +317,7 @@ boolean
 
 #### Defined in
 
-[date/isWeek.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/isWeek.ts#L18)
+[date/isWeek.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/isWeek.ts#L18)
 
 ___
 
@@ -342,4 +342,4 @@ ___
 
 #### Defined in
 
-[date/subtractDay.ts:8](https://github.com/jun-young1993/juny-tsutil/blob/1ef785d/src/date/subtractDay.ts#L8)
+[date/subtractDay.ts:8](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/subtractDay.ts#L8)

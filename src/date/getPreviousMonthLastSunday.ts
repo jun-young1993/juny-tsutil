@@ -1,6 +1,6 @@
 import { DayOfWeek } from "./DayOfWeek";
 import { getFirstInMonth } from "./getFirstDayInMotth";
-import { getPreviousMonthLastDay } from "./getPreviousMonth";
+import { getPreviousMonthLastDay } from "./getPreviousMonthLastDay";
 import { isWeek } from "./isWeek";
 import { subtractDay } from "./subtractDay";
 
