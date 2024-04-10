@@ -24,9 +24,9 @@ import { subtractDay } from "./subtractDay";
 	expect(
 		getPreviousMonthLastSunday(2024,5)
 	).toEqual([
-		new Date('2024-04-30T00:00:00.000Z'),
-		new Date('2024-04-29T00:00:00.000Z'),
 		new Date('2024-04-28T00:00:00.000Z'),
+ 		new Date('2024-04-29T00:00:00.000Z'),
+ 		new Date('2024-04-30T00:00:00.000Z'),
 	])
  * ```
  */
@@ -42,7 +42,7 @@ export function getPreviousMonthLastSunday(year: number, month: number): Date[] 
 	result.push(new Date(startDate));
 	while(!isWeek(startDate,DayOfWeek.SUN)){
 		subtractDay(startDate,1);
-		result.push(new Date(startDate));
+		result.unshift(new Date(startDate));
 	}
 	
 	return result;
