@@ -9,7 +9,8 @@ import { compareDate } from "./date/compareDate";
 import { getPreviousMonthLastDay } from "./date/getPreviousMonthLastDay";
 import { subtractDay } from "./date/subtractDay";
 import { getPreviousMonthLastSunday } from "./date/getPreviousMonthLastSunday";
-
+import { removeFirstSegment } from "./str/removeFirstSegment";
+import { removeLastSegment} from "./str/removeLastSegment";
 
 
 export {
@@ -23,5 +24,7 @@ export {
     addDay,
     getPreviousMonthLastDay,
     subtractDay,
-    getPreviousMonthLastSunday
+    getPreviousMonthLastSunday,
+    removeFirstSegment,
+    removeLastSegment
 }

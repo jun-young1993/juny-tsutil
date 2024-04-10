@@ -19,6 +19,8 @@
 - [getPreviousMonthLastDay](modules.md#getpreviousmonthlastday)
 - [getPreviousMonthLastSunday](modules.md#getpreviousmonthlastsunday)
 - [isWeek](modules.md#isweek)
+- [removeFirstSegment](modules.md#removefirstsegment)
+- [removeLastSegment](modules.md#removelastsegment)
 - [subtractDay](modules.md#subtractday)
 
 ## Functions
@@ -44,7 +46,7 @@ Date 객체에 대한 날짜 더하기
 
 #### Defined in
 
-[date/addDay.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/addDay.ts#L9)
+[date/addDay.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/addDay.ts#L9)
 
 ___
 
@@ -86,7 +88,7 @@ Date 객체를 밀리초 까지의 비교로 같은 시간대인지 판단
 
 #### Defined in
 
-[date/compareDate.ts:27](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/compareDate.ts#L27)
+[date/compareDate.ts:27](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/compareDate.ts#L27)
 
 ___
 
@@ -127,7 +129,7 @@ const result = fillWord('4',2,'0',-1);
 
 #### Defined in
 
-[str/fillWord.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/str/fillWord.ts#L20)
+[str/fillWord.ts:20](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/str/fillWord.ts#L20)
 
 ___
 
@@ -159,7 +161,7 @@ ___
 
 #### Defined in
 
-[date/getDaysInMonth.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getDaysInMonth.ts#L18)
+[date/getDaysInMonth.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/getDaysInMonth.ts#L18)
 
 ___
 
@@ -180,7 +182,7 @@ ___
 
 #### Defined in
 
-[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getFirstDayInMotth.ts#L10)
+[date/getFirstDayInMotth.ts:10](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/getFirstDayInMotth.ts#L10)
 
 ___
 
@@ -205,7 +207,7 @@ Date
 
 #### Defined in
 
-[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getLastDayInMotth.ts#L9)
+[date/getLastDayInMotth.ts:9](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/getLastDayInMotth.ts#L9)
 
 ___
 
@@ -238,7 +240,7 @@ previous date
 
 #### Defined in
 
-[date/getPreviousMonthLastDay.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getPreviousMonthLastDay.ts#L16)
+[date/getPreviousMonthLastDay.ts:16](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/getPreviousMonthLastDay.ts#L16)
 
 ___
 
@@ -282,7 +284,7 @@ expect(
 
 #### Defined in
 
-[date/getPreviousMonthLastSunday.ts:33](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/getPreviousMonthLastSunday.ts#L33)
+[date/getPreviousMonthLastSunday.ts:33](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/getPreviousMonthLastSunday.ts#L33)
 
 ___
 
@@ -315,7 +317,88 @@ boolean
 
 #### Defined in
 
-[date/isWeek.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/isWeek.ts#L18)
+[date/isWeek.ts:18](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/isWeek.ts#L18)
+
+___
+
+### removeFirstSegment
+
+▸ **removeFirstSegment**(`str`, `delimiter`): `string`
+
+Removes the first segment from a string delimited by the specified delimiter.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` | The input string. |
+| `delimiter` | `string` | The delimiter used to split the string into segments. |
+
+#### Returns
+
+`string`
+
+The modified string with the first segment removed.
+
+**`Example`**
+
+```ts
+ const str1 = 'foo/bar';
+ const str2 = '/foo/bar';
+
+ removeFirstSegment(str1,'/'); // /bar
+ removeFirstSegment(str1,'/'); // /bar
+```
+
+#### Defined in
+
+[str/removeFirstSegment.ts:17](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/str/removeFirstSegment.ts#L17)
+
+___
+
+### removeLastSegment
+
+▸ **removeLastSegment**(`str`, `delimiter`): `string`
+
+Removes the Last segment from a string delimited by the specified delimiter.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` | The input string. |
+| `delimiter` | `string` | The delimiter used to split the string into segments. |
+
+#### Returns
+
+`string`
+
+The modified string with the first segment removed.
+
+**`Example`**
+
+```ts
+describe('removeLastSegment', ()=>{
+    test('should return an remove Last segment',() => {
+        expect(
+            removeLastSegment('/foo/bar','/')
+        ).toEqual('/foo');
+
+        expect(
+            removeLastSegment('foo/bar','/')
+        ).toEqual('foo');
+
+        expect(
+            removeLastSegment('foo/bar/','/')
+        ).toEqual('foo/bar');
+
+    })
+})
+```
+
+#### Defined in
+
+[str/removeLastSegment.ts:28](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/str/removeLastSegment.ts#L28)
 
 ___
 
@@ -340,4 +423,4 @@ ___
 
 #### Defined in
 
-[date/subtractDay.ts:8](https://github.com/jun-young1993/juny-tsutil/blob/b8e5e26/src/date/subtractDay.ts#L8)
+[date/subtractDay.ts:8](https://github.com/jun-young1993/juny-tsutil/blob/85b0206/src/date/subtractDay.ts#L8)
